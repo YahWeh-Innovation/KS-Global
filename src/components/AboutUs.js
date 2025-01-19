@@ -7,9 +7,11 @@ const AboutUs = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#F9F9F9",
-        padding: { xs: 3, sm: 6, md: 8 },
+        backgroundColor: "#EFF2EF",
+        paddingLeft: { xs: 3, sm: 6, md: 8 },
         borderRadius: "10px",
+        border:"1px solid #F9F9F9",
+        margin:{ xs: 3, sm: 6, md: 8 }
       }}
     >
       <Grid container spacing={4} alignItems="center">
@@ -47,7 +49,6 @@ const AboutUs = () => {
         <Grid item xs={12} md={6}>
           <Box
             sx={{
-              borderRadius: "10px",
               overflow: "hidden",
               height: "100%",
               display: "flex",
@@ -61,7 +62,8 @@ const AboutUs = () => {
               style={{
                 width: "100%",
                 height: "auto",
-                borderRadius: "10px",
+                borderTopRightRadius: "10px",
+                borderBottomRightRadius: "10px",
               }}
             />
           </Box>

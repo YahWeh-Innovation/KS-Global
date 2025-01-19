@@ -58,12 +58,13 @@ const PopularCategories = () => {
         maxWidth: "100%",
         minHeight: "320px",
         padding: "20px",
-        margin: "0 auto",
+        margin:{ xs: 3, sm: 6, md: 8 },
         textAlign: "center",
         position: "relative",
+        margin:{ xs: 3, sm: 6, md: 8 } 
       }}
     >
-      <Typography variant="h5" fontWeight="bold" gutterBottom>
+      <Typography variant="h4" fontWeight="bold" gutterBottom>
         Popular Categories
       </Typography>
       <Box
@@ -72,7 +73,7 @@ const PopularCategories = () => {
           overflowX: "auto",
           scrollBehavior: "smooth",
           gap: "20px",
-          padding: "10px 0",
+          padding: "24px 0",
           width: "100%",
         }}
         ref={scrollRef}
@@ -94,7 +95,7 @@ const PopularCategories = () => {
         <IconButton
           onClick={() => handleScroll("left")}
           sx={{
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(0, 0, 0, 0.3)",
             color: "#fff",
             "&:hover": { backgroundColor: "rgba(0, 0, 0, 0.7)" },
           }}
@@ -104,7 +105,7 @@ const PopularCategories = () => {
         <IconButton
           onClick={() => handleScroll("right")}
           sx={{
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            backgroundColor: "rgba(0, 0, 0, 0.3)",
             color: "#fff",
             "&:hover": { backgroundColor: "rgba(0, 0, 0, 0.7)" },
           }}

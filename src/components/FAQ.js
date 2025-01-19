@@ -11,7 +11,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import faqsData from "../data/frequentAskData";
 
 const FAQ = () => {
-  const [expanded, setExpanded] = useState("");
+  const [expanded, setExpanded] = useState("panel-0");
 
   const handleChange = (val) => {
     setExpanded(val === expanded ? "false" : val);
