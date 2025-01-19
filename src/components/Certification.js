@@ -31,7 +31,7 @@ const Certification = () => {
         position: "relative",
         backgroundColor: "#fff",
         py: 4,
-        px: 2,
+        margin:{ xs: 3, sm: 6, md: 8 }
       }}
     >
       <Typography

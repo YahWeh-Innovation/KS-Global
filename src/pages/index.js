@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import AboutUs from "../components/AboutUs";
 import WhyChooseUs from "../components/WhyChooseUs";
-import Testimonial from "../components/Testimonial";
 import Footer from "../components/Footer";
 import ProductQuotationBanner from "../components/ProductQuotationBanner";
 import Certification from "../components/Certification";
@@ -26,12 +25,11 @@ const Home = () => {
         <Navbar />
         <HeroSection />
         <Box marginY={1}>
-        <Certification />
         </Box>
         <AboutUs />
-        <WhyChooseUs />
-        <Testimonial />
+        <Certification />
         <PopularCategories />
+        <WhyChooseUs />
         <FAQ />
         <ProductQuotationBanner />
         <Footer />

@@ -1,12 +1,16 @@
 import React from "react";
 import { Box, Typography, Grid } from "@mui/material";
 import whyChooseUsData from "../data/whyChooseUsData";
+import ViewInArOutlinedIcon from '@mui/icons-material/ViewInArOutlined';
+import PaymentsOutlinedIcon from '@mui/icons-material/PaymentsOutlined';
+import SpaOutlinedIcon from '@mui/icons-material/SpaOutlined';
 const WhyChooseUs = () => {
   return (
     <Box
       sx={{
         margin: "0 auto",
-        padding: { xs: "16px", sm: "32px" },
+        paddingTop: { xs: "16px", sm: "32px" },
+        margin:{ xs: 3, sm: 6, md: 8 },
         textAlign: "center",
       }}
     >
@@ -37,9 +41,10 @@ const WhyChooseUs = () => {
           >
             <Box
               sx={{
-                width: "18px",
-                height: "18px",
-                backgroundColor: "#000000",
+                width: "60px",
+                height: "60px",
+                borderRadius: "50%",
+                backgroundColor: "#1B481F",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -48,12 +53,10 @@ const WhyChooseUs = () => {
             >
               <Box
                 sx={{
-                  width: "13px",
-                  height: "13px",
-                  borderRadius: "50%",
-                  backgroundColor: "#FFFFFF",
+                  color: "white",
                 }}
               />
+              {feature.icon}
             </Box>
 
             <Typography
