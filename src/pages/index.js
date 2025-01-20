@@ -11,6 +11,7 @@ import ProductQuotationBanner from "../components/ProductQuotationBanner";
 import Certification from "../components/Certification";
 import FAQ from "../components/FAQ";
 import PopularCategories from "../components/popularCategories";
+import OurProduct from "../components/product/OurProduct";
 import { Box } from "@mui/material";
 const Home = () => {
   dbConnect();
@@ -23,6 +24,7 @@ const Home = () => {
         <meta name="description" content="Res portal" />
       </Head>
       <Box>
+<<<<<<< Updated upstream
         <Navbar />
         <HeroSection />
         <Box marginY={1}>
@@ -35,6 +37,28 @@ const Home = () => {
         <FAQ />
         <ProductQuotationBanner />
         <Footer />
+=======
+        <Box sx={{ position: "fixed", top: 0, width: "100%", zIndex: 10 }}>
+          <Navbar />
+        </Box>
+        <Box
+          sx={{
+            flex: 1,
+            mt: "64px",
+          }}
+        >
+          <HeroSection />
+          <Box marginY={1}></Box>
+          <AboutUs />
+          <Certification />
+          <PopularCategories />
+          <OurProduct />
+          <WhyChooseUs />
+          <FAQ />
+          <ProductQuotationBanner />
+          <Footer />
+        </Box>
+>>>>>>> Stashed changes
       </Box>
     </Box>
   );
