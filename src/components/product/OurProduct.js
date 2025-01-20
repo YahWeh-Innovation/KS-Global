@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Grid, Typography, Box, Button } from "@mui/material";
 import ProductCard from "./ProductCard";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import axios from "axios";
 import Link from "next/link";
 
@@ -21,7 +22,7 @@ const OurProduct = () => {
   }, []);
 
   return (
-    <Box sx={{ p: 3 }}>
+    <Box sx={{ p: 3, margin: { xs: 3, sm: 6, md: 8 } }}>
       <Typography
         variant="h4"
         textAlign="center"
@@ -36,17 +37,17 @@ const OurProduct = () => {
           </Grid>
         ))}
       </Grid>
-      <Box sx={{ mt: 4, textAlign: "center" }}>
-        <Link href="/product/all" passHref>
+      <Box sx={{ mt: 4, textAlign: "center", color: "black" }}>
+        <Link href={"product/all"}>
           <Button
             variant="outlined"
-            sx={{ borderRadius: 50, fontWeight: "bold", px: 4 }}
+            color="black"
+            sx={{ borderRadius: 50, px: 4, color: "black" }}
           >
-            View All Products
+            View All Products <ArrowRightAltIcon />
           </Button>
         </Link>
       </Box>
-      ;
     </Box>
   );
 };
