@@ -24,20 +24,6 @@ const Home = () => {
         <meta name="description" content="Res portal" />
       </Head>
       <Box>
-<<<<<<< Updated upstream
-        <Navbar />
-        <HeroSection />
-        <Box marginY={1}>
-        <Certification />
-        </Box>
-        <AboutUs />
-        <WhyChooseUs />
-        <Testimonial />
-        <PopularCategories />
-        <FAQ />
-        <ProductQuotationBanner />
-        <Footer />
-=======
         <Box sx={{ position: "fixed", top: 0, width: "100%", zIndex: 10 }}>
           <Navbar />
         </Box>
@@ -58,7 +44,6 @@ const Home = () => {
           <ProductQuotationBanner />
           <Footer />
         </Box>
->>>>>>> Stashed changes
       </Box>
     </Box>
   );
