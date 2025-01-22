@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Typography,
@@ -12,10 +12,17 @@ import faqsData from "../data/frequentAskData";
 
 const FAQ = () => {
   const [expanded, setExpanded] = useState("panel-0");
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleChange = (val) => {
     setExpanded(val === expanded ? "false" : val);
   };
+
+  if (!isClient) return null;
 
   return (
     <Box
@@ -65,7 +72,7 @@ const FAQ = () => {
             <Typography sx={{ fontWeight: "bold" }}>{faq.question}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{faq.answer}</Typography>
+            <Typography dangerouslySetInnerHTML={{ __html: faq.answer }} />
           </AccordionDetails>
         </Accordion>
       ))}
