@@ -100,7 +100,9 @@ const ContactUs = () => {
 
   return (
     <Box>
-      <Box><Navbar/></Box>
+      <Box>
+        <Navbar />
+      </Box>
       <Box
         sx={{
           padding: "40px",
@@ -139,16 +141,31 @@ const ContactUs = () => {
               </Typography>
               <Box display="flex" alignItems="center" mb={2}>
                 <PhoneIcon sx={{ marginRight: "10px" }} />
-                <Typography>123-456-7890</Typography>
+                <Typography>
+                  {" "}
+                  <a
+                    href="tel:8975764867"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    8975764867
+                  </a>
+                </Typography>
               </Box>
               <Box display="flex" alignItems="center" mb={2}>
                 <EmailIcon sx={{ marginRight: "10px" }} />
-                <Typography>ksglobal@gmail.com</Typography>
+                <Typography>
+                  <a
+                    href="mailto:contactus@ks-global.in"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    contactus@ks-global.in
+                  </a>
+                </Typography>
               </Box>
               <Box display="flex" alignItems="center">
                 <LocationOnIcon sx={{ marginRight: "10px" }} />
                 <Typography>
-                  123, Sector 50, Noida, Uttar Pradesh, India - 201301
+                B-273, Sector 57, Gurgaon, Haryana
                 </Typography>
               </Box>
             </Box>
@@ -297,7 +314,9 @@ const ContactUs = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box><Footer/></Box>
+      <Box>
+        <Footer />
+      </Box>
     </Box>
   );
 };
