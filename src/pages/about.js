@@ -128,8 +128,8 @@ const AboutUs = () => {
             >
               <Box
                 component="img"
-                src="https://t4.ftcdn.net/jpg/07/98/72/89/360_F_798728945_c7RghNy7K8nSSVYsisEJ7EladuShxT98.jpg"
-                alt="Rama Kumar"
+                src="https://res.cloudinary.com/dkoezhi9u/image/upload/v1737575532/IMG_1091_elmici.jpg"
+                alt="Vikrant Rana"
                 sx={{
                   width: { xs: "240px", sm: "260px", md: "280px" },
                   height: { xs: "270px", sm: "290px", md: "310px" },
@@ -154,7 +154,7 @@ const AboutUs = () => {
                       fontWeight: "bold",
                     }}
                   >
-                    Rama Kumar
+                    Eshant Ujjwal
                   </Typography>
                   <Typography
                     variant="body2"
@@ -163,13 +163,13 @@ const AboutUs = () => {
                       color: "text.secondary",
                     }}
                   >
-                    Founder
+                    Co-Founder
                   </Typography>
                 </Box>
                 <Box
                   component="img"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/640px-Outdoors-man-portrait_%28cropped%29.jpg"
-                  alt="Dev Kapoor"
+                  src="https://res.cloudinary.com/dkoezhi9u/image/upload/v1737575518/WhatsApp_Image_2025-01-22_at_14.54.17_qmpmqp.jpg"
+                  alt="Eshant Ujjwal"
                   sx={{
                     border: "3px solid white",
                     position: "absolute",
@@ -191,7 +191,7 @@ const AboutUs = () => {
                     fontWeight: "bold",
                   }}
                 >
-                  Dev Kapoor
+                  Vikrant Rana
                 </Typography>
                 <Typography
                   variant="body2"

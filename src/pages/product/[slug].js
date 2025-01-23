@@ -73,11 +73,13 @@ const ProductPage = () => {
       <Box sx={{ position: "fixed", top: 0, width: "100%", zIndex: 10 }}>
         <Navbar />
       </Box>
-      <Box         sx={{
+      <Box
+        sx={{
           flex: 1,
           mt: "64px",
           p: 4,
-        }}>
+        }}
+      >
         <Box sx={{ p: 4 }}>
           <Grid
             container
