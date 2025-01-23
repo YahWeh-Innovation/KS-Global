@@ -100,7 +100,9 @@ const ContactUs = () => {
 
   return (
     <Box>
-      <Box><Navbar/></Box>
+      <Box>
+        <Navbar />
+      </Box>
       <Box
         sx={{
           padding: "40px",
@@ -137,19 +139,52 @@ const ContactUs = () => {
               <Typography variant="body2" mb={8}>
                 You can reach us anytime!
               </Typography>
-              <Box display="flex" alignItems="center" mb={2}>
-                <PhoneIcon sx={{ marginRight: "10px" }} />
-                <Typography>123-456-7890</Typography>
+              <Box
+                display="flex"
+                flexDirection={"column"}
+                alignItems="start"
+                gap={2}
+                mb={2}
+              >
+                <Box display="flex">
+                  <PhoneIcon sx={{ marginRight: "10px" }} />
+                  <Typography>
+                    {" "}
+                    <a
+                      href="tel:7838625305 "
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      +91 7838625305
+                    </a>
+                  </Typography>
+                </Box>
+                <Box display="flex">
+                  <PhoneIcon sx={{ marginRight: "10px" }} />
+                  <Typography>
+                    {" "}
+                    <a
+                      href="tel:9599784148"
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      +91 9599784148
+                    </a>
+                  </Typography>
+                </Box>
               </Box>
               <Box display="flex" alignItems="center" mb={2}>
                 <EmailIcon sx={{ marginRight: "10px" }} />
-                <Typography>ksglobal@gmail.com</Typography>
+                <Typography>
+                  <a
+                    href="mailto:contactus@ks-global.in"
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    contactus@ks-global.in
+                  </a>
+                </Typography>
               </Box>
               <Box display="flex" alignItems="center">
                 <LocationOnIcon sx={{ marginRight: "10px" }} />
-                <Typography>
-                  123, Sector 50, Noida, Uttar Pradesh, India - 201301
-                </Typography>
+                <Typography>B-273, Sector 57, Gurgaon, Haryana</Typography>
               </Box>
             </Box>
           </Grid>
@@ -297,7 +332,9 @@ const ContactUs = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box><Footer/></Box>
+      <Box>
+        <Footer />
+      </Box>
     </Box>
   );
 };
