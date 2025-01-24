@@ -35,7 +35,7 @@ export default async function handler(req, res) {
       const [field, order] = sortBy.split(":");
       sortOptions[field] = order === "desc" ? -1 : 1;
     } else {
-      sortOptions.createdAt = -1;
+      sortOptions.createdAt = 1;
     }
 
     const products = await Product.find(filter)

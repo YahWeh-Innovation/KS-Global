@@ -84,14 +84,19 @@ const ProductPage = () => {
           <Grid
             container
             spacing={3}
+            justifyContent={"center"}
+            alignItems={"center"}
             sx={{
               flexDirection: {
-                xs: "column-reverse",
-                md: "row",
+                xs: "column",
+                md: "column",
               },
             }}
           >
-            <Grid item xs={12} md={6}>
+            <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
+              {product.name}
+            </Typography>
+            {/* <Grid item xs={12} md={6}>
               <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
                 {product.name}
               </Typography>
@@ -179,7 +184,7 @@ const ProductPage = () => {
                   </ul>
                 </AccordionDetails>
               </Accordion>
-            </Grid>
+            </Grid> */}
 
             <Grid item xs={12} md={6}>
               <Box
