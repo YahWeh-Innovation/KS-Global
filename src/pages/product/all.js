@@ -18,7 +18,7 @@ const ProductFilter = () => {
     "Nuts",
     "Spices",
     "Agricultural Products",
-    "Sweeteners",
+    "Sweetners",
     "Lintels And Beans",
   ];
 
